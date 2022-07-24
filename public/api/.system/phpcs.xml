@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="PSR12/Laravel">
+  <arg name="extensions" value="php" />
+  <rule ref="PSR12">
+    <exclude name="Generic.Files.LineLength.TooLong"/>
+  </rule>
+  <arg name="colors" />
+  <arg value="ps" />
+
+  <file>./app</file>
+  <file>./domain</file>
+</ruleset>

@@ -1,0 +1,14 @@
+includes:
+  - ./vendor/nunomaduro/larastan/extension.neon
+  - vendor/timeweb/phpstan-enum/extension.neon
+
+parameters:
+  level: 7
+
+  paths:
+    - app
+    - domain
+
+  ignoreErrors:
+    - '#no value type specified in iterable type array.#'
+    - '#with type Illuminate\\Contracts\\Auth\\Authenticatable is not subtype of native type Domain\\Domains\\Entities\\User\\User.#'
